@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Image Websearch</title>
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap-slider.js" type="text/javascript"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+
+		<link href="css/main.css" rel="stylesheet" type="text/css" />
+		<link href="css/slider.css" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		
+	<div id="search-container" class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<p><h2><i>The</i> Image Web Search Engine</h2></p>
+				<input type="text" id="input-search-string" /><button type="button" id="search-btn">Search!</button>
+				<p id="feedback"></p>
+			</div>
+			<div id="options-container">
+				<span id="options-toggler" class="glyphicon glyphicon-tasks" data-toggle="tooltip" data-placement="right" title="Adjust weights"></span>
+				<div id="options" class="well">
+					<div class="par"><b>URL</b><input type="text" class="col-md-1 slider" value="" data-slider-min="1" data-slider-max="100" data-slider-step="1" data-slider-value="1" data-slider-selection="after" id="url-weight"></div>
+					<div class="par"><b>Filename</b><input type="text" class="col-md-1 slider" value="" data-slider-min="1" data-slider-max="100" data-slider-step="1" data-slider-value="1" data-slider-selection="after" id="filename-weight"></div>
+					<div class="par"><b>Alt-tag</b><input type="text" class="col-md-1 slider" value="" data-slider-min="1" data-slider-max="100" data-slider-step="1" data-slider-value="1" data-slider-selection="after" id="alt-weight"></div>
+					<div class="par"><b>Description</b><input type="text" class="col-md-1 slider" value="" data-slider-min="1" data-slider-max="100" data-slider-step="1" data-slider-value="1" data-slider-selection="after" id="description-weight"></div>
+					<div class="par"><b>Context</b><input type="text" class="col-md-1 slider" value="" data-slider-min="1" data-slider-max="100" data-slider-step="1" data-slider-value="1" data-slider-selection="after" id="context-weight"></div>
+					<div class="par"><b>Title</b><input type="text" class="col-md-1 slider" value="" data-slider-min="1" data-slider-max="100" data-slider-step="1" data-slider-value="1" data-slider-selection="after" id="title-weight"></div>
+					<div class="par"><b>Subtitle</b><input type="text" class="col-md-1 slider" value="" data-slider-min="1" data-slider-max="100" data-slider-step="1" data-slider-value="1" data-slider-selection="after" id="subtitle-weight"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="results-container" class="well">
+		<p>Found <i id="nr-results">11</i> matching images.</p>
+		<div id="results"></div>
+		<p id="extend-results-p"><a href="#" id="extends-results-link">Extend results</a></p>
+	</div>
+	</body>
+</html>

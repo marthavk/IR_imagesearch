@@ -1,0 +1,98 @@
+#search-container {
+	margin-top: 40px;
+}
+
+#search-container input {
+	width: 466px;
+	height: 50px;
+	padding-left: 2px;
+	font-size: 1.5em;
+}
+
+#search-container button {
+	height: 50px;
+	margin-left: -1px;
+	font-size: 1.5em;
+}
+
+#search-container #feedback {
+	text-align: center;
+	display: none;
+}
+
+#search-container #options-container {
+	float: left;
+	margin-top: 63px;
+	margin-left: -12px;
+}
+
+#search-container #options-toggler {
+	margin-top: 14px;
+	font-size: 1.5em;
+	cursor: pointer;
+	float: left;
+}
+
+#search-container #options {
+	float: left;
+	margin-left: 3px;
+	margin-top: -87px;
+	display: none;
+}
+
+#search-container #options-container #options .par {
+	position: relative;
+	clear: both;
+	float: left;
+	margin-top: 24px;
+}
+
+#search-container #options-container #options .par .slider {
+	width: 150px;
+}
+
+#search-container #options-container #options .par b {
+	position: absolute;
+	top: -17px;
+	right: 0px;
+}
+
+#search-container #options-container #options .par:first-child {
+	margin-top: 12px;
+}
+
+#results-container {
+	margin-top: 40px;
+	display: none;
+}
+
+#results-container #results .image-container {
+	height: 200px;
+}
+
+#results-container #results .image-container img {
+	max-width: 100%; 
+	max-height: 100%;
+}
+
+#results-container #results .info-row {
+	background-color: #999;
+	min-height: 400px;
+} 
+
+#results-container #results .info-row .img-column {
+	
+} 
+
+#results-container #results .info-row .img-column img {
+	
+} 
+
+#results-container #results .info-row .info-column {
+	
+} 
+
+#results-container #extend-results-p {
+	text-align: center;
+	display: none;
+}
